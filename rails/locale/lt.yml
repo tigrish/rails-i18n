@@ -55,45 +55,45 @@ lt:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: apie 1 valanda
         few: apie %{count} valandų
+        one: apie 1 valanda
         other: apie %{count} valandų
       about_x_months:
-        one: apie 1 mėnuo
         few: apie %{count} mėnesiai
+        one: apie 1 mėnuo
         other: apie %{count} mėnesiai
       about_x_years:
-        one: apie 1 metai
         few: apie %{count} metų
+        one: apie 1 metai
         other: apie %{count} metų
       half_a_minute: pusė minutės
       less_than_x_minutes:
-        one: mažiau nei minutė
         few: mažiau nei %{count} minutės
+        one: mažiau nei minutė
         other: mažiau nei %{count} minutės
       less_than_x_seconds:
-        one: mažiau nei 1 sekundė
         few: mažiau nei %{count} sekundės
+        one: mažiau nei 1 sekundė
         other: mažiau nei %{count} sekundės
       over_x_years:
-        one: virš 1 metų
         few: virš %{count} metų
+        one: virš 1 metų
         other: virš %{count} metų
       x_days:
-        one: 1 diena
         few: ! '%{count} dienų'
+        one: 1 diena
         other: ! '%{count} dienų'
       x_minutes:
-        one: 1 minutė
         few: ! '%{count} minutės'
+        one: 1 minutė
         other: ! '%{count} minutės'
       x_months:
-        one: 1 mėnuo
         few: ! '%{count} mėnesiai'
+        one: 1 mėnuo
         other: ! '%{count} mėnesiai'
       x_seconds:
-        one: 1 sekundė
         few: ! '%{count} sekundės'
+        one: 1 sekundė
         other: ! '%{count} sekundės'
     prompts:
       day: Diena
@@ -102,7 +102,7 @@ lt:
       month: Mėnuo
       second: Sekundės
       year: Metai
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: turi būti patvirtintas
@@ -127,8 +127,8 @@ lt:
     template:
       body: ! 'Šiuose laukuose yra klaidų:'
       header:
-        one: Išsaugant objektą %{model} rasta klaida
         few: Išsaugant objektą %{model} rastos %{count} klaidos
+        one: Išsaugant objektą %{model} rasta klaida
         other: Išsaugant objektą %{model} rastos %{count} klaidos
   number:
     currency:
@@ -160,8 +160,8 @@ lt:
         format: ! '%n %u'
         units:
           byte:
-            one: Baitas
             few: Baitai
+            one: Baitas
             other: Baitai
           gb: GB
           kb: KB
@@ -185,10 +185,3 @@ lt:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: pm
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

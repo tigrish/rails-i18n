@@ -55,59 +55,59 @@ sr:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: око %{count} сат
         few: око %{count} сата
         many: око %{count} сати
+        one: око %{count} сат
         other: око %{count} сати
       about_x_months:
-        one: око %{count} месец
         few: око %{count} месеца
         many: око %{count} месеци
+        one: око %{count} месец
         other: око %{count} месеци
       about_x_years:
-        one: око %{count} године
         few: око %{count} године
         many: око %{count} године
+        one: око %{count} године
         other: око %{count} године
       half_a_minute: пола минуте
       less_than_x_minutes:
-        one: мање од %{count} минут
         few: мање од %{count} минута
         many: мање од %{count} минута
+        one: мање од %{count} минут
         other: мање од %{count} минута
         zero: мање од минута
       less_than_x_seconds:
         few: мање од %{count} секунде
-        one: мање од %{count} секунд
         many: мање од %{count} секунди
+        one: мање од %{count} секунд
         other: мање од %{count} секунди
-        zero: мање од %{count} секунде
+        zero: мање од 1 секунде
       over_x_years:
-        one: преко %{count} године
         few: преко %{count} године
         many: преко %{count} године
+        one: преко %{count} године
         other: преко %{count} године
       x_days:
-        one: ! '%{count} дан'
         few: ! '%{count} дана'
         many: ! '%{count} дана'
+        one: 1 дан
         other: ! '%{count} дана'
       x_minutes:
-        one: ! '%{count} минут'
         few: ! '%{count} минута'
         many: ! '%{count} минута'
+        one: 1 минут
         other: ! '%{count} минута'
       x_months:
-        one: ! '%{count} месец'
         few: ! '%{count} месеца'
         many: ! '%{count} месеци'
+        one: ! '%{count} месец'
         other: ! '%{count} месеци'
       x_seconds:
-        one: ! '%{count} секунда'
         few: ! '%{count} секунде'
         many: ! '%{count} секунди'
+        one: ! '%{count} секунда'
         other: ! '%{count} секунди'
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: мора бити прихваћено
@@ -132,9 +132,9 @@ sr:
     template:
       body: ! 'Молим Вас да проверите следећа поља:'
       header:
-        one: ! 'Нисам успео сачувати %{model}: %{count} грешка.'
         few: ! 'Нисам успео сачувати %{model}: %{count} грешке.'
         many: ! 'Нисам успео сачувати %{model}: %{count} грешки.'
+        one: ! 'Нисам успео сачувати %{model}: 1 грешка.'
         other: ! 'Нисам успео сачувати %{model}: %{count} грешки.'
   number:
     currency:
@@ -177,10 +177,3 @@ sr:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: ПМ
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

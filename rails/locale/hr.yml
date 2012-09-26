@@ -55,60 +55,62 @@ hr:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: oko %{count} sat
         few: oko %{count} sata
         many: oko %{count} sati
+        one: oko %{count} sat
         other: oko %{count} sati
       about_x_months:
-        one: oko %{count} mjesec
         few: oko %{count} mjeseca
         many: oko %{count} mjeseci
+        one: oko %{count} mjesec
         other: oko %{count} mjeseci
       about_x_years:
-        one: oko %{count} godine
         few: oko %{count} godine
         many: oko %{count} godina
+        one: oko %{count} godine
         other: oko %{count} godina
       almost_x_years:
-        one: skoro %{count} godina
         few: skoro %{count} godine
         many: skoro %{count} godina
+        one: skoro %{count} godina
         other: skoro %{count} godina
       half_a_minute: pola minute
       less_than_x_minutes:
-        one: manje od %{count} minute
         few: manje od %{count} minute
         many: manje od %{count} minuta
+        one: manje od %{count} minute
         other: manje od %{count} minuta
+        zero: manje od minute
       less_than_x_seconds:
-        one: manje od %{count} sekunde
         few: manje od %{count} sekunde
         many: manje od %{count} sekundi
+        one: manje od %{count} sekunde
         other: manje od %{count} sekundi
+        zero: manje od 1 sekunde
       over_x_years:
-        one: preko %{count} godine
         few: preko %{count} godine
         many: preko %{count} godina
+        one: preko %{count} godine
         other: preko %{count} godina
       x_days:
-        one: ! '%{count} dan'
         few: ! '%{count} dana'
         many: ! '%{count} dana'
+        one: ! '%{count} dan'
         other: ! '%{count} dana'
       x_minutes:
-        one: ! '%{count} minuta'
         few: ! '%{count} minute'
         many: ! '%{count} minuta'
+        one: ! '%{count} minuta'
         other: ! '%{count} minuta'
       x_months:
-        one: ! '%{count} mjesec'
         few: ! '%{count} mjeseca'
         many: ! '%{count} mjeseci'
+        one: ! '%{count} mjesec'
         other: ! '%{count} mjeseci'
       x_seconds:
-        one: ! '%{count} sekunda'
         few: ! '%{count} sekunde'
         many: ! '%{count} sekundi'
+        one: ! '%{count} sekunda'
         other: ! '%{count} sekundi'
     prompts:
       day: Dan
@@ -117,7 +119,7 @@ hr:
       month: Mjesec
       second: Sekunde
       year: Godina
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: mora biti prihvaćen
@@ -139,26 +141,26 @@ hr:
       record_invalid: ! 'Validacija nije uspjela: %{errors}'
       taken: je već zauzet
       too_long:
-        one: je predugačak (maksimum je %{count} znak)
         few: je predugačak (maksimum je %{count} znaka)
         many: je predugačak (maksimum je %{count} znakova)
+        one: je predugačak (maksimum je %{count} znak)
         other: je predugačak (maksimum je %{count} znakova)
       too_short:
-        one: je prekratak (minimum je %{count} znak)
         few: je prekratak (minimum je %{count} znaka)
         many: je prekratak (minimum je %{count} znakova)
+        one: je prekratak (minimum je %{count} znak)
         other: je prekratak (minimum je %{count} znakova)
       wrong_length:
-        one: nije odgovarajuće duljine (treba biti %{count} znak)
         few: nije odgovarajuće duljine (treba biti %{count} znaka)
         many: nije odgovarajuće duljine (treba biti %{count} znakova)
+        one: nije odgovarajuće duljine (treba biti %{count} znak)
         other: nije odgovarajuće duljine (treba biti %{count} znakova)
     template:
       body: ! 'Sljedeća polja su neispravno popunjena:'
       header:
-        one: ! '%{count} greška je spriječila %{model} da se spremi'
         few: ! '%{count} greške su spriječile %{model} da se spremi'
         many: ! '%{count} grešaka je spriječilo %{model} da se spremi'
+        one: ! '%{count} greška je spriječila %{model} da se spremi'
         other: ! '%{count} grešaka je spriječilo %{model} da se spremi'
   helpers:
     select:
@@ -187,11 +189,11 @@ hr:
       decimal_units:
         format: ! '%n %u'
         units:
-          thousand: Tisuća
-          million: Milijun
           billion: Milijarda
-          trillion: Trilijun
+          million: Milijun
           quadrillion: Kvadrilijun
+          thousand: Tisuća
+          trillion: Trilijun
           unit: ''
       format:
         delimiter: ''
@@ -202,9 +204,9 @@ hr:
         format: ! '%n %u'
         units:
           byte:
-            one: bajt
             few: bajta
             many: bajtova
+            one: bajt
             other: bajtova
           gb: GB
           kb: KB
@@ -228,10 +230,3 @@ hr:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: PM
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

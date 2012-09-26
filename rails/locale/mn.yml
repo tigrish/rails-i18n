@@ -9,7 +9,7 @@ mn:
     - Ба
     - Бя
     abbr_month_names:
-    -
+    - 
     - 1 сар
     - 2 сар
     - 3 сар
@@ -35,7 +35,7 @@ mn:
       long: ! '%Y %B %d'
       short: ! '%y-%m-%d'
     month_names:
-    -
+    - 
     - 1 сар
     - 2 сар
     - 3 сар
@@ -55,38 +55,38 @@ mn:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: ! '1 цаг орчим'
+        one: 1 цаг орчим
         other: ! '%{count} цаг орчим'
       about_x_months:
-        one: ! '1 сар орчим'
+        one: 1 сар орчим
         other: ! '%{count} сар орчим'
       about_x_years:
-        one: ! '1 жил орчим'
+        one: 1 жил орчим
         other: ! '%{count} жил орчим'
       almost_x_years:
         one: бараг 1 жил
         other: бараг %{count} жил
       half_a_minute: хагас минут
       less_than_x_minutes:
-        one: ! '1 минутаас бага'
+        one: 1 минутаас бага
         other: ! '%{count} минутаас бага'
       less_than_x_seconds:
-        one: ! '1 секундээс бага'
+        one: 1 секундээс бага
         other: ! '%{count} секундээс бага'
       over_x_years:
-        one: ! '1 жилээс илүү'
+        one: 1 жилээс илүү
         other: ! '%{count} жилээс илүү'
       x_days:
-        one: ! '1 өдөр'
+        one: 1 өдөр
         other: ! '%{count} өдөр'
       x_minutes:
-        one: ! '1 минут'
+        one: 1 минут
         other: ! '%{count} минут'
       x_months:
-        one: ! '1 сар'
+        one: 1 сар
         other: ! '%{count} сар'
       x_seconds:
-        one: ! '1 секунд'
+        one: 1 секунд
         other: ! '%{count} секунд'
     prompts:
       day: Өдөр
@@ -95,7 +95,7 @@ mn:
       month: Сар
       second: Секунд
       year: Жил
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: хүлээн зөвшөөрөгдсөн байх ёстой
@@ -196,10 +196,3 @@ mn:
       long: ! '%Y %B %d, %H:%M:%S'
       short: ! '%y-%m-%d'
     pm: орой
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

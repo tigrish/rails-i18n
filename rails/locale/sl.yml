@@ -117,7 +117,7 @@ sl:
       month: Mesec
       second: Sekunde
       year: Leto
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: mora biti sprejeto
@@ -135,7 +135,6 @@ sl:
       less_than_or_equal_to: mora biti manj ali enako %{count}
       not_a_number: ni številka
       odd: mora biti liho
-      record_invalid: ''
       taken: je že zasedeno
       too_long: je predolgo (dovoljeno je do %{count} znakov)
       too_short: je prekratko (zahtevano je najmanj %{count} znakov)
@@ -177,10 +176,10 @@ sl:
         format: ! '%n %u'
         units:
           byte:
-            one: Byte
-            two: Bytes
             few: Bytes
+            one: Byte
             other: Bytes
+            two: Bytes
           gb: GB
           kb: KB
           mb: MB
@@ -203,10 +202,3 @@ sl:
       long: ! '%d. %B, %Y ob %H:%M'
       short: ! '%d. %b ob %H:%M'
     pm: popoldan
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors
