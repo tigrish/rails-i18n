@@ -9,7 +9,7 @@ tr:
     - Cum
     - Cts
     abbr_month_names:
-    -
+    - 
     - Oca
     - Şub
     - Mar
@@ -35,7 +35,7 @@ tr:
       long: ! '%e %B %Y, %A'
       short: ! '%e %b'
     month_names:
-    -
+    - 
     - Ocak
     - Şubat
     - Mart
@@ -97,7 +97,7 @@ tr:
       month: Ay
       second: Saniye
       year: Yıl
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: kabul edilmeli
@@ -130,9 +130,9 @@ tr:
     select:
       prompt: Lütfen seçiniz
     submit:
-      create: '%{model} Ekle'
-      submit: '%{model} Kaydet'
-      update: '%{model} Güncelle'
+      create: ! '%{model} Ekle'
+      submit: ! '%{model} Kaydet'
+      update: ! '%{model} Güncelle'
   number:
     currency:
       format:
@@ -190,10 +190,3 @@ tr:
       long: ! '%e %B %Y, %A, %H:%M'
       short: ! '%e %B, %H:%M'
     pm: öğleden sonra
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

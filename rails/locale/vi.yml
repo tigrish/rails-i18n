@@ -95,7 +95,7 @@ vi:
       month: Tháng
       second: Giây
       year: Năm
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: phải được đồng ý
@@ -112,8 +112,9 @@ vi:
       less_than: phải nhỏ hơn %{count}
       less_than_or_equal_to: phải nhỏ hơn hoặc bằng %{count}
       not_a_number: không phải là số
-      not_an_integer: phải là một số nguyên 
+      not_an_integer: phải là một số nguyên
       odd: phải là số lẻ
+      record_invalid: ! 'Lỗi xác nhận: %{errors}'
       taken: đã có
       too_long: quá dài (tối đa %{count} ký tự)
       too_short: quá ngắn (tối thiểu %{count} ký tự)
@@ -150,12 +151,12 @@ vi:
       decimal_units:
         format: ! '%n %u'
         units:
-          unit: ''
           billion: Tỷ
           million: Triệu
           quadrillion: Triệu tỷ
           thousand: Nghìn
           trillion: Nghìn tỷ
+          unit: ''
       format:
         delimiter: ''
         precision: 1
@@ -189,13 +190,3 @@ vi:
       long: ! '%d %B, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: chiều
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors
-      messages:
-        record_invalid: "Lỗi xác nhận: %{errors}"
-        taken: "đã có"

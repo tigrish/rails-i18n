@@ -95,14 +95,13 @@ sv:
       month: Månad
       second: Sekund
       year: År
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: måste vara accepterad
       blank: måste anges
       confirmation: stämmer inte överens
       empty: får ej vara tom
-      equal_to: måste vara samma som
       even: måste vara jämnt
       exclusion: är reserverat
       greater_than: måste vara större än %{count}
@@ -190,10 +189,3 @@ sv:
       long: ! '%e %B %Y %H:%M'
       short: ! '%e %b %H:%M'
     pm: ''
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors

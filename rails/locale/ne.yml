@@ -95,13 +95,13 @@ ne:
       month: महिना
       second: सेकेण्ड
       year: बर्ष
-  errors: &errors
+  errors:
     format: ! '%{attribute} %{message}'
     messages:
       accepted: स्वीकार गरिनुपर्नेछ
       blank: खाली हुन सक्दैन
       confirmation: पुष्ठिकरणसँग मेल खाँदैन
-      empty: रित्तो हुन सक्दैन 
+      empty: रित्तो हुन सक्दैन
       equal_to: ! '%{count} सँग बराबर हुनुपर्नेछ'
       even: जोर संख्या हुनुपर्नेछ
       exclusion: प्रयोगको लागी संरक्षित छ
@@ -134,7 +134,7 @@ ne:
     select:
       prompt: कृपया छान्नुहोस्
     submit:
-      create: ! 'नयाँ %{model} बनाउ'
+      create: नयाँ %{model} बनाउ
       submit: ! '%{model} बचत गर'
       update: ! '%{model} सामयिक बनाउ'
   number:
@@ -196,10 +196,3 @@ ne:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: बेलुका
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors
