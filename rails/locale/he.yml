@@ -119,7 +119,7 @@ he:
       record_invalid: ! 'האימות נכשל: %{errors}'
       taken: כבר בשימוש
       too_long: יותר מדי ארוך (לא יותר מ- %{count} תוים)
-      too_short: יותר מדי קצר (לא יותר מ- %{count} תוים)
+      too_short: יותר מדי קצר (לא יפחות מ- %{count} תוים)
       wrong_length: לא באורך הנכון (חייב להיות %{count} תוים)
     template:
       body: ! 'אנא בדוק את השדות הבאים:'
