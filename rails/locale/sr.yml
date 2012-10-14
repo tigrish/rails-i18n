@@ -90,12 +90,12 @@ sr:
       x_days:
         few: ! '%{count} дана'
         many: ! '%{count} дана'
-        one: 1 дан
+        one: ! '%{count} дан'
         other: ! '%{count} дана'
       x_minutes:
         few: ! '%{count} минута'
         many: ! '%{count} минута'
-        one: 1 минут
+        one: ! '%{count} минут'
         other: ! '%{count} минута'
       x_months:
         few: ! '%{count} месеца'
@@ -134,7 +134,7 @@ sr:
       header:
         few: ! 'Нисам успео сачувати %{model}: %{count} грешке.'
         many: ! 'Нисам успео сачувати %{model}: %{count} грешки.'
-        one: ! 'Нисам успео сачувати %{model}: 1 грешка.'
+        one: ! 'Нисам успео сачувати %{model}: %{count} грешка.'
         other: ! 'Нисам успео сачувати %{model}: %{count} грешки.'
   number:
     currency:
