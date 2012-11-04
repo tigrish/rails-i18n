@@ -85,6 +85,9 @@ es-PE:
       x_seconds:
         one: 1 segundo
         other: ! '%{count} segundos'
+      almost_x_years:
+        one: casi %{count} año
+        other: casi %{count} años
     prompts:
       hour: Hora
       minute: Minuto
@@ -121,6 +124,7 @@ es-PE:
       wrong_length:
         one: longitud errónea (debe ser de 1 caracter)
         other: longitud errónea (debe ser de %{count} caracteres)
+      not_an_integer: debe ser un entero
     template:
       body: ! 'Revise que los siguientes campos sean válidos:'
       header:
@@ -147,6 +151,11 @@ es-PE:
         format: ! '%n %u'
         units:
           unit: ''
+          billion: mil millones
+          million: millón
+          quadrillion: mil billones
+          thousand: mil
+          trillion: billón
       format:
         delimiter: ! ','
         precision: 2
@@ -175,3 +184,15 @@ es-PE:
       long: ! '%A, %d de %B del %Y a las %I:%M %p'
       short: ! '%d de %b a las %H:%M hrs'
     pm: pm
+  helpers:
+    select:
+      prompt: Por favor selecciona
+    submit:
+      create: Crear %{model}
+      submit: Guardar %{model}
+      update: Actualizar %{model}
+  support:
+    array:
+      last_word_connector: y
+      two_words_connector: y
+      words_connector: ! ','
