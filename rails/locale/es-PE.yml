@@ -88,7 +88,10 @@ es-PE:
     prompts:
       hour: Hora
       minute: Minuto
-      second: Segundo
+      second: Segundos
+      day: Día
+      month: Mes
+      year: Año
   errors:
     format: ! '%{attribute} %{message}'
     messages:
