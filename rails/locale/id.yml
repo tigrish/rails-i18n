@@ -120,6 +120,7 @@ id:
       too_long: terlalu panjang (maksimum %{count} karakter)
       too_short: terlalu pendek (minimum %{count} karakter)
       wrong_length: jumlah karakter salah (seharusnya %{count} karakter)
+      not_an_integer: 
     template:
       body: ! 'Ada masalah dengan field berikut:'
       header:

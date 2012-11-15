@@ -88,6 +88,14 @@ gl:
       x_seconds:
         one: 1 segundo
         other: ! '%{count} segundos'
+      almost_x_years: 
+    prompts:
+      day: 
+      hour: 
+      minute: 
+      month: 
+      second: 
+      year: 
   errors:
     format: ! '%{attribute} %{message}'
     messages:
@@ -110,6 +118,8 @@ gl:
       too_long: é demasiado longo (non máis de %{count} carácteres)
       too_short: é demasiado curto (non menos de %{count} carácteres)
       wrong_length: non ten a lonxitude correcta (debe ser de %{count} carácteres)
+      not_an_integer: 
+      record_invalid: 
     template:
       body: ! 'Atopáronse os seguintes problemas:'
       header:
@@ -136,6 +146,11 @@ gl:
         format: ! '%n %u'
         units:
           unit: ''
+          billion: 
+          million: 
+          quadrillion: 
+          thousand: 
+          trillion: 
       format:
         delimiter: ''
         precision: 1
@@ -169,3 +184,10 @@ gl:
       long: ! '%A %e de %B de %Y ás %H:%M'
       short: ! '%e/%m, %H:%M'
     pm: ''
+  helpers:
+    select:
+      prompt: 
+    submit:
+      create: 
+      submit: 
+      update: 

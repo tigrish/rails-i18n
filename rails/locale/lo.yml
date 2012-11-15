@@ -125,6 +125,7 @@ lo:
         other: ! '%{count} ວິນາທີ '
         two: ! '%{count} ວິນາທີ '
         zero: ! '%{count} ວິນາທີ '
+      almost_x_years: 
     prompts:
       day: ວັນ
       hour: ຊົ່ວໂມງ
@@ -155,6 +156,7 @@ lo:
       too_long: ຍາວໂພດ (ສູງສຸດຄື %{count} ຕົວອັກສອນ)
       too_short: ສັ້ນໂພດ (ຕຳ່ສຸດຄື %{count} ຕົວອັກສອນ)
       wrong_length: ຄວາມຍາວຜິດ (ຄວນຈະເປັນ %{count} ຕົວອັກສອນ)
+      not_an_integer: 
     template:
       body: ! 'ກະລຸນາກວດສອບຂໍ້ມູນໃນຫ້ອງຕໍ່ໄປນີ້ :'
       header:
@@ -167,6 +169,10 @@ lo:
   helpers:
     select:
       prompt: โปรดเลือก
+    submit:
+      create: 
+      submit: 
+      update: 
   number:
     currency:
       format:
@@ -188,6 +194,11 @@ lo:
         format: ! '%n %u'
         units:
           unit: ''
+          billion: 
+          million: 
+          quadrillion: 
+          thousand: 
+          trillion: 
       format:
         delimiter: ''
         precision: 1

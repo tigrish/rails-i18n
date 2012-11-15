@@ -139,6 +139,8 @@ sl:
       too_long: je predolgo (dovoljeno je do %{count} znakov)
       too_short: je prekratko (zahtevano je najmanj %{count} znakov)
       wrong_length: je napačne dolžine (mora biti natančno %{count} znakov)
+      not_an_integer: 
+      record_invalid: 
     template:
       body: ! 'Napačno izpolnjena polja:'
       header:
@@ -167,6 +169,11 @@ sl:
         format: ! '%n %u'
         units:
           unit: ''
+          billion: 
+          million: 
+          quadrillion: 
+          thousand: 
+          trillion: 
       format:
         delimiter: ''
         precision: 1
@@ -202,3 +209,10 @@ sl:
       long: ! '%d. %B, %Y ob %H:%M'
       short: ! '%d. %b ob %H:%M'
     pm: popoldan
+  helpers:
+    select:
+      prompt: 
+    submit:
+      create: 
+      submit: 
+      update: 

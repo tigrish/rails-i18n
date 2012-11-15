@@ -127,6 +127,10 @@ ko:
   helpers:
     select:
       prompt: 선택해주세요
+    submit:
+      create: 
+      submit: 
+      update: 
   number:
     currency:
       format:

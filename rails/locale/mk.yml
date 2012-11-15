@@ -92,6 +92,14 @@ mk:
         few: ! '%{count} секунди'
         one: 1 секунда
         other: ! '%{count} секунди'
+      almost_x_years: 
+    prompts:
+      day: 
+      hour: 
+      minute: 
+      month: 
+      second: 
+      year: 
   errors:
     format: ! '%{attribute} %{message}'
     messages:
@@ -114,6 +122,8 @@ mk:
       too_long: е предолг (не повеќе од %{count} карактери)
       too_short: е прекраток (не помалку од %{count} карактери)
       wrong_length: несоодветна должина (мора да имате %{count} карактери)
+      not_an_integer: 
+      record_invalid: 
     template:
       body: ! 'Ве молиме проверете ги следните полиња:'
       header:
@@ -141,6 +151,11 @@ mk:
         format: ! '%n %u'
         units:
           unit: ''
+          billion: 
+          million: 
+          quadrillion: 
+          thousand: 
+          trillion: 
       format:
         delimiter: ''
         precision: 3
@@ -148,6 +163,12 @@ mk:
         strip_insignificant_zeros: true
       storage_units:
         format: ! '%n %u'
+        units:
+          byte: 
+          gb: 
+          kb: 
+          mb: 
+          tb: 
     percentage:
       format:
         delimiter: ''
@@ -161,3 +182,15 @@ mk:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: ПМ
+  helpers:
+    select:
+      prompt: 
+    submit:
+      create: 
+      submit: 
+      update: 
+  support:
+    array:
+      last_word_connector: 
+      two_words_connector: 
+      words_connector: 

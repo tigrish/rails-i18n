@@ -125,6 +125,7 @@ rm:
         other: ! '%{count} secundas'
         two: ! '%{count} secundas'
         zero: ! '%{count} secundas'
+      almost_x_years: 
     prompts:
       day: dis
       hour: uras
@@ -154,6 +155,8 @@ rm:
       too_long: è memia lung (betg dapli che %{count} caracters)
       too_short: è memia curt (betg pli pauc che %{count} caracters)
       wrong_length: ha la fallida lunghezza (sto avair %{count} caracters)
+      not_an_integer: 
+      record_invalid: 
     template:
       body: ! 'Faschai uschè bain e controllai ils suandants champs:'
       header:
@@ -184,6 +187,11 @@ rm:
         format: ! '%n %u'
         units:
           unit: ''
+          billion: 
+          million: 
+          quadrillion: 
+          thousand: 
+          trillion: 
       format:
         delimiter: ''
         precision: 1
@@ -221,3 +229,10 @@ rm:
       long: ! '%A, %d. %B %Y, %H:%M Uhr'
       short: ! '%d. %B, %H:%M Uhr'
     pm: suentermezdi
+  helpers:
+    select:
+      prompt: 
+    submit:
+      create: 
+      submit: 
+      update: 

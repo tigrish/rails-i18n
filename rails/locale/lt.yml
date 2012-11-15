@@ -95,6 +95,7 @@ lt:
         few: ! '%{count} sekundės'
         one: 1 sekundė
         other: ! '%{count} sekundės'
+      almost_x_years: 
     prompts:
       day: Diena
       hour: Valanda
@@ -124,6 +125,8 @@ lt:
       too_long: per ilgas (daugiausiai %{count} simboliai)
       too_short: per trumpas (mažiausiai %{count} simboliai)
       wrong_length: neteisingo ilgio (turi būti %{count} simboliai)
+      not_an_integer: 
+      record_invalid: 
     template:
       body: ! 'Šiuose laukuose yra klaidų:'
       header:
@@ -151,6 +154,11 @@ lt:
         format: ! '%n %u'
         units:
           unit: ''
+          billion: 
+          million: 
+          quadrillion: 
+          thousand: 
+          trillion: 
       format:
         delimiter: ''
         precision: 1
@@ -185,3 +193,10 @@ lt:
       long: ! '%B %d, %Y %H:%M'
       short: ! '%d %b %H:%M'
     pm: pm
+  helpers:
+    select:
+      prompt: 
+    submit:
+      create: 
+      submit: 
+      update: 

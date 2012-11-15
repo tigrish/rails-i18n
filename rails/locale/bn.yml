@@ -85,6 +85,7 @@ bn:
       x_seconds:
         one: ১ সেকেন্ড
         other: ! '%{count} সেকেন্ড'
+      almost_x_years: 
     prompts:
       day: দিন
       hour: ঘন্টা
@@ -114,6 +115,8 @@ bn:
       too_long: খুব বড়ো (সর্বোচ্চ %{count} অক্ষর)
       too_short: খুব ছোটো (সর্বনিম্ন %{count} অক্ষর)
       wrong_length: দৈর্ঘ্যটি সঠিক নয় (%{count} অক্ষর হতে হবে)
+      not_an_integer: 
+      record_invalid: 
     template:
       body: ! 'এই ফিল্ডগুলোতে কিছু সমস্যা দেখা দিয়েছে:'
       header:
@@ -140,6 +143,11 @@ bn:
         format: ! '%n %u'
         units:
           unit: ''
+          billion: 
+          million: 
+          quadrillion: 
+          thousand: 
+          trillion: 
       format:
         delimiter: ''
         precision: 1
@@ -173,3 +181,10 @@ bn:
       long: ! '%e de %B de %Y %H:%M'
       short: ! '%e de %b %H:%M'
     pm: pm
+  helpers:
+    select:
+      prompt: 
+    submit:
+      create: 
+      submit: 
+      update: 
