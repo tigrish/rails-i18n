@@ -139,8 +139,8 @@ sl:
       too_long: je predolgo (dovoljeno je do %{count} znakov)
       too_short: je prekratko (zahtevano je najmanj %{count} znakov)
       wrong_length: je napačne dolžine (mora biti natančno %{count} znakov)
-      not_an_integer: 
-      record_invalid: 
+      not_an_integer: mora biti celo število
+      record_invalid: ! 'Število napak: %{errors}'
     template:
       body: ! 'Napačno izpolnjena polja:'
       header:
@@ -169,10 +169,10 @@ sl:
         format: ! '%n %u'
         units:
           unit: ''
-          billion: 
-          million: 
+          billion: milijarda
+          million: milijon
           quadrillion: 
-          thousand: 
+          thousand: tisoč
           trillion: 
       format:
         delimiter: ''
@@ -211,7 +211,7 @@ sl:
     pm: popoldan
   helpers:
     select:
-      prompt: 
+      prompt: Prosimo izberite
     submit:
       create: 
       submit: 
